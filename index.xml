@@ -6,8 +6,7 @@
         <description>Recent content on faust</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>faust</copyright>
-        <lastBuildDate>Wed, 27 Nov 2024 10:59:45 +0800</lastBuildDate><atom:link href="https://faust6312.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>faust</copyright><atom:link href="https://faust6312.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>GoodMoring</title>
         <link>https://faust6312.github.io/p/goodmoring/</link>
         <pubDate>Wed, 27 Nov 2024 10:59:45 +0800</pubDate>
@@ -463,13 +462,21 @@ $$</description>
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>关于</title>
-        <link>https://faust6312.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <title>About</title>
+        <link>https://faust6312.github.io/about/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://faust6312.github.io/about/</guid>
+        <description>&lt;p&gt;没钱买房，只能装修一下赛博小屋了&amp;hellip;&amp;hellip;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://faust6312.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://faust6312.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;你是一个一个一个一个博客网站啊&lt;/p&gt;
-</description>
+        <guid>https://faust6312.github.io/links/</guid>
+        <description></description>
         </item>
         <item>
         <title>搜索</title>
@@ -477,14 +484,6 @@ $$</description>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://faust6312.github.io/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>友链</title>
-        <link>https://faust6312.github.io/%E5%8F%8B%E9%93%BE/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://faust6312.github.io/%E5%8F%8B%E9%93%BE/</guid>
         <description></description>
         </item>
         
