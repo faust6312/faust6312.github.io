@@ -7,20 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>faust</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://faust6312.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://faust6312.github.io/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <lastBuildDate>Wed, 27 Nov 2024 10:59:45 +0800</lastBuildDate><atom:link href="https://faust6312.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>你好世界</title>
+        <link>https://faust6312.github.io/categories/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+        <pubDate>Wed, 27 Nov 2024 10:59:45 +0800</pubDate>
         
-        <guid>https://faust6312.github.io/categories/test/</guid>
-        <description>&lt;img src="https://faust6312.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://faust6312.github.io/categories/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+        <description></description>
         </item>
         <item>
-        <title>测试</title>
-        <link>https://faust6312.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
+        <title>Test2</title>
+        <link>https://faust6312.github.io/categories/test2/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://faust6312.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
+        <guid>https://faust6312.github.io/categories/test2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>测试2</title>
+        <link>https://faust6312.github.io/categories/%E6%B5%8B%E8%AF%952/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://faust6312.github.io/categories/%E6%B5%8B%E8%AF%952/</guid>
         <description></description>
         </item>
         <item>
@@ -38,6 +46,14 @@
         
         <guid>https://faust6312.github.io/categories/themes/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Test</title>
+        <link>https://faust6312.github.io/categories/test/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://faust6312.github.io/categories/test/</guid>
+        <description>&lt;img src="https://faust6312.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         <item>
         <title>Test With Whitespaces</title>
