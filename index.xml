@@ -482,12 +482,131 @@ DNS解析:CloudFlare
 </description>
         </item>
         <item>
-        <title>Test_for_zidongbushu</title>
-        <link>https://faust6312.github.io/p/test_for_zidongbushu/</link>
+        <title>关于使用Ubuntu搭建僵尸毁灭工程服务器</title>
+        <link>https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <pubDate>Tue, 26 Nov 2024 21:00:44 +0800</pubDate>
         
-        <guid>https://faust6312.github.io/p/test_for_zidongbushu/</guid>
-        <description>&lt;p&gt;hello world&lt;/p&gt;
+        <guid>https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;img src="https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/20241021215100_1.png" alt="Featured image of post 关于使用Ubuntu搭建僵尸毁灭工程服务器" /&gt;&lt;h2 id=&#34;1安装lib32stdc6来支持32bit程序&#34;&gt;1.安装lib32stdc++6来支持32bit程序
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;指令: sudo apt-get install lib32stdc++6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;lib32stdc++6是C++标准库的一个32位版本，主要用于在64位的Ubuntu系统上运行需要32位 库支持的应用程序或软件。为什么要安装呢？因为linux系统的steam只有32位。&lt;/p&gt;
+&lt;h2 id=&#34;2下载解压运行并登录steam&#34;&gt;2.下载解压运行并登录steam
+&lt;/h2&gt;&lt;p&gt;（如果一些命令没权限就在前面加一个sudo）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;cd /usr/local/ （切换到这个目录下）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mkdir steamcmd （创建一个steamcmd 文件夹）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cd steamcmd/ （切换到刚创建的steamcmd 文件夹）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wget &lt;a class=&#34;link&#34; href=&#34;https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz&lt;/a&gt; （下载steamcmd）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tar -zxvf steamcmd_linux.tar.gz （解压）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;./steamcmd.sh（运行steamcmd）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装完成后会有个 steam&amp;gt; 的符号,意味着已经进入了控制台版本的steam
+下面是登录操作：
+(假如我的账号是114514，密码是1919810）
+则输入：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;login 114514 1919810&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果有steam令牌还需要输入steam令牌&lt;/p&gt;
+&lt;h2 id=&#34;3下载僵尸毁灭工程&#34;&gt;3.下载僵尸毁灭工程
+&lt;/h2&gt;&lt;p&gt;登录成功后输入：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;app_update 380870 validate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(有时候由于网络问题有可能一次下不完整，可以再输一遍命令）&lt;/p&gt;
+&lt;p&gt;下载完成后输入：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;exit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;退出steamCMD&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;输入：tmux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;进入tmux&lt;/p&gt;
+&lt;p&gt;(用tmux保一下进程)&lt;/p&gt;
+&lt;p&gt;然后输入：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cd ~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;再然后再输入 ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;cd Steam/steamapps/common/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cd Project\ Zomboid\ Dedicated\ Server/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最后再输入 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;./start-server.sh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;启动服务器。&lt;/p&gt;
+&lt;p&gt;后面会要你设置一个僵毁服务器密码，需要输入两遍，请自行设置。&lt;/p&gt;
+&lt;p&gt;启动后如果无法连接到服务器那多半就是没开放端口，请在你购买的云服务器开放一下，这里以腾讯云为例&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/1.png&#34;
+	width=&#34;1389&#34;
+	height=&#34;312&#34;
+	srcset=&#34;https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/1_hu5500128815218650369.png 480w, https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/1_hu12365022234492398057.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;445&#34;
+		data-flex-basis=&#34;1068px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4如何进行更新操作&#34;&gt;4.如何进行更新操作：
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(1).启动steamcmd&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;/usr/local/steamcmd/steamcmd.sh&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(2).登录&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;login 用户名 密码 令牌&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(3).更新&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;app_update 380870 validate&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5如何添加模组&#34;&gt;5.如何添加模组：
+&lt;/h2&gt;&lt;p&gt;先配置好一个服务器配置文件，例如：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/2.png&#34;
+	width=&#34;910&#34;
+	height=&#34;200&#34;
+	srcset=&#34;https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/2_hu3355301843044942695.png 480w, https://faust6312.github.io/p/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8ubuntu%E6%90%AD%E5%BB%BA%E5%83%B5%E5%B0%B8%E6%AF%81%E7%81%AD%E5%B7%A5%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/2_hu15649341601148451803.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;455&#34;
+		data-flex-basis=&#34;1092px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;默认保存在这个路径下：C:\Users\XXXX\Zomboid\Server，配置的时候也能看到路径 然后拿这个配置文件替换掉服务器的配置文件就行了,再次启动服务器会自己加载mod。&lt;/p&gt;
 </description>
         </item>
         <item>
