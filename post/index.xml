@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>faust</copyright>
-        <lastBuildDate>Thu, 28 Nov 2024 19:19:49 +0800</lastBuildDate><atom:link href="https://faust6312.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 28 Nov 2024 19:32:55 +0800</lastBuildDate><atom:link href="https://faust6312.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title> 使用hugo&#43;github搭建博客</title>
         <link>https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Thu, 28 Nov 2024 17:00:45 +0800</pubDate>
@@ -456,15 +456,33 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;到此部署已经基本结束，博客详细美化请自行搜索，不同主题之间亦有差异&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;————————————————————————————————————————————————————————————&lt;/p&gt;
-&lt;p&gt;写在后面：&lt;/p&gt;
-&lt;p&gt;​	好多人搭建完博客的第一件事就是写一一篇搭建博客的论文，薪火相传了属于是。好在互联网很大什么教程都能找到，搭建起来其实也不困难。搭建本博客用到的东西总结如下👇🏻👇🏻👇🏻。&lt;/p&gt;
-&lt;p&gt;网页:hugo的stack主题+github
-DNS解析:CloudFlare
-评论功能:用的vercel部署的weline
-评论存储:LearnCloud
-自动化部署:github action
-域名:700050.xyz，是在spaceship买的便宜的6位数xyz域名,10年才40块，也可以搞免费的二级域名。本来是在阿里云买的域名，但是spaceship更便宜，阿里云的域名就被我66卖了，还赚了点，四舍五入等于20块买10年了属于是。&lt;/p&gt;
-&lt;p&gt;参考：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;写在后面：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	好多人搭建完博客的第一件事就是写一一篇搭建博客的论文，薪火相传了属于是。好在互联网很大什么教程都能找到，搭建起来其实也不困难。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;搭建本博客用到的东西总结如下👇🏻👇🏻👇🏻。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;网页:hugo的stack主题+github&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS解析:CloudFlare&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;评论功能:用的vercel部署的weline&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;评论存储:LearnCloud&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自动化部署:github action&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;域名:700050.xyz，是在spaceship买的便宜的6位数xyz域名,10年才40块，也可以搞免费的二级域名。本来是在阿里云买的域名，&lt;/p&gt;
+&lt;p&gt;但是spaceship更便宜，阿里云的域名就被我66卖了，还赚了点，四舍五入等于20块买10年了属于是。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;参考：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;[1]https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/&lt;/p&gt;
 &lt;p&gt;[2]https://blog.reincarnatey.net/2023/build-hugo-blog-with-stack-mod/&lt;/p&gt;
 &lt;p&gt;[3]https://imayx.top/waline/#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86&lt;/p&gt;
