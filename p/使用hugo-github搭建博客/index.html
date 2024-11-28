@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1.环境准备 1.1下载配置git环境 不赘述，网上有很多教程\n1.2下载配置hugo环境 前往【Hugo Github Tags】，选择对应版本下载，下载后解压即可\nWindows下载版本：hugo_extended_xxxxx_windows_amd64.zip\n">
+<title> 使用hugo&#43;github搭建博客</title>
+
+<link rel='canonical' href='https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/'>
+
+<link rel="stylesheet" href="/scss/style.min.f1fe1c4edbcb2da1e452f88baf1cb8fe755ae4ecce4833e295547efe59ec3e7e.css"><meta property='og:title' content=" 使用hugo+github搭建博客">
+<meta property='og:description' content="1.环境准备 1.1下载配置git环境 不赘述，网上有很多教程\n1.2下载配置hugo环境 前往【Hugo Github Tags】，选择对应版本下载，下载后解压即可\nWindows下载版本：hugo_extended_xxxxx_windows_amd64.zip\n">
+<meta property='og:url' content='https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/'>
+<meta property='og:site_name' content='cheems'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-28T17:00:45&#43;08:00'/><meta property='article:modified_time' content='2024-11-28T18:57:07&#43;08:00'/><meta property='og:image' content='https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-150725.png' />
+<meta name="twitter:title" content=" 使用hugo+github搭建博客">
+<meta name="twitter:description" content="1.环境准备 1.1下载配置git环境 不赘述，网上有很多教程\n1.2下载配置hugo环境 前往【Hugo Github Tags】，选择对应版本下载，下载后解压即可\nWindows下载版本：hugo_extended_xxxxx_windows_amd64.zip\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-150725.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/static/js/sakura-less.js"></script>
+        <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3167158562562984115.png" width="300"
+                            height="322" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">cheems</a></h1>
+            <h2 class="site-description">Silence wench,I do not wish to be horny anymore, I just want to be happy.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/237593169'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.cnblogs.com/faust6312'
+                        target="_blank"
+                        title="Blogyuan"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-blogger"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21h8a5 5 0 0 0 5 -5v-3a3 3 0 0 0 -3 -3h-1v-2a5 5 0 0 0 -5 -5h-4a5 5 0 0 0 -5 5v8a5 5 0 0 0 5 5z" /><path d="M7 7m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h3a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-3a1.5 1.5 0 0 1 -1.5 -1.5z" /><path d="M7 14m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/faust6312'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#11下载配置git环境">1.1下载配置git环境</a></li>
+    <li><a href="#12下载配置hugo环境">1.2下载配置hugo环境</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#21-创建博客">2.1 创建博客</a></li>
+    <li><a href="#22-配置主题">2.2 配置主题</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#31-常规部署">3.1 常规部署</a></li>
+    <li><a href="#32-github-action自动部署">3.2 Github Action自动部署</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#41在-leancloud-上部署数据库">4.1在 LeanCloud 上部署数据库</a></li>
+    <li><a href="#42在-vercel-上部署服务端">4.2在 Vercel 上部署服务端</a></li>
+    <li><a href="#评论管理">评论管理</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#1域名">1.域名</a></li>
+    <li><a href="#2绑定">2.绑定</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                <img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-150725_hu10506331810050862281.png"
+                        srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-150725_hu10506331810050862281.png 800w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-150725_hu2976522671355550608.png 1600w"
+                        width="800" 
+                        height="364" 
+                        loading="lazy"
+                        alt="Featured image of post  使用hugo&#43;github搭建博客" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" >
+                博客搭建
+            </a>
+        
+            <a href="/categories/hugo/" >
+                Hugo
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"> 使用hugo&#43;github搭建博客</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-11-28</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1环境准备">1.环境准备
+</h1><h2 id="11下载配置git环境">1.1下载配置git环境
+</h2><p>不赘述，网上有很多教程</p>
+<h2 id="12下载配置hugo环境">1.2下载配置hugo环境
+</h2><ul>
+<li>
+<p>前往【<a class="link" href="https://github.com/gohugoio/hugo/tags"  target="_blank" rel="noopener"
+    >Hugo Github Tags</a>】，选择对应版本下载，下载后解压即可</p>
+</li>
+<li>
+<p>Windows下载版本：<strong>hugo_extended_xxxxx_windows_amd64.zip</strong></p>
+</li>
+</ul>
+<p><img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-151711.png"
+	width="1120"
+	height="294"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-151711_hu2545554915547473213.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/QQ20241128-151711_hu2035921233705231682.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="380"
+		data-flex-basis="914px"
+	
+></p>
+<p>这里可以在网上搜索配置一下hugo的环境变量，不配置也行，直接复制一份.exe文件到你要操作的文件夹也能在cmd用hugo命令</p>
+<h1 id="2搭建博客">2.搭建博客
+</h1><h2 id="21-创建博客">2.1 创建博客
+</h2><ul>
+<li>
+<p>（1）在<strong>hugo.exe</strong>所在文件夹的地址栏敲打cmd，然后Enter唤起命令行</p>
+</li>
+<li>
+<p>（2）输入命令`hugo new site myblgo(你存放博客文件的文件夹名)创建hugo文件</p>
+</li>
+<li>
+<p>（3）输入命名<code>cd myblog</code>切换目录，并把<strong>hugo.exe</strong>复制到刚生成的文件夹中(配置了环境变量可以不用复制)</p>
+</li>
+<li>
+<p>（4）输入命令<code>hugo server -D</code>启动服务，访问<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
+    >http://localhost:1313</a>，Ctrl+C停止服务 <strong>（hugo默认是没有主题的，需要进行主题配置）</strong>
+现在浏览器看到的是
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/1.png"
+	width="530"
+	height="269"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/1_hu2621618656239389740.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/1_hu10718354339798562110.png 1024w"
+	loading="lazy"
+	
+		alt="如果步骤正确就能看到"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="197"
+		data-flex-basis="472px"
+	
+></p>
+<h2 id="22-配置主题">2.2 配置主题
+</h2></li>
+<li>
+<p>（1)前往<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    ></a>，查找自己喜欢的主题，进行下载</p>
+</li>
+<li>
+<p>（2）这边以【Stack主题】为例，将下载好的主题解压，放到/themes文件夹中
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/2.png"
+	width="517"
+	height="438"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/2_hu3793164897491700363.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/2_hu9875232024880275110.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="118"
+		data-flex-basis="283px"
+	
+></p>
+</li>
+<li>
+<p>（3）将exampleSite样例数据中的 Content 和 hugo.yaml 复制到主文件夹中，并删掉hugo.toml和content/post/rich-content</p>
+</li>
+<li>
+<p>（4）修改 hugo.yaml 中的 theme，将他修改为跟主题文件夹同名(让主题生效)</p>
+</li>
+</ul>
+<h1 id="3部署博客">3.部署博客
+</h1><h2 id="31-常规部署">3.1 常规部署
+</h2><ul>
+<li>（1）前往【Github官网】，创建仓库** {github用户名}.github.io**</li>
+<li>（2）前往Setting -&gt; Pages -&gt; Branch选择main分支(我是老版本的master，自行分辨)，然后保存，会自动开启 https://{github用户名}.github.io 的地址，这地址也是以后访问博客的地址</li>
+<li>（3）回到hugo文件中，执行命令hugo -D，会生成 public 静态资源文件夹</li>
+<li>（4）在 public 执行以下命令上传到github仓库上</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin {你的github仓库地址}
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>（5）上传成功后访问 **https://{github用户名}.github.io **，成功搭建属于自己的Hugo博客
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/3.png"
+	width="1919"
+	height="870"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/3_hu11827992608299167600.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/3_hu11242496624489148136.png 1024w"
+	loading="lazy"
+	
+		alt="主题调色折腾了好久才满意"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="220"
+		data-flex-basis="529px"
+	
+></li>
+</ul>
+<h2 id="32-github-action自动部署">3.2 Github Action自动部署
+</h2><ul>
+<li>（1）Github创建一个新的仓库，用于存放Hugo的主文件</li>
+<li>（2）前往Setttings -&gt; Developer Settings -&gt; Personal access tokens，创建一个token(classic)</li>
+<li>（3）token选择永不过期，并勾选 repo 和 workflow 选项</li>
+<li>（4）为保证安全，将生成的token，保存的仓库的变量中，前往Settings -&gt; Secrets and variables -&gt; Actions中设置</li>
+<li>（5）在hugo主文件创建一个.github/workflows/xxxx.yaml文件，将以下内容复制进去，想具体了解更多，可查看<a class="link" href="https://docs.github.com/zh/actions"  target="_blank" rel="noopener"
+    >GitHubAction文档</a></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 代码提交到main分支时触发github action
+</span></span><span class="line"><span class="cl">on:
+</span></span><span class="line"><span class="cl">  push:
+</span></span><span class="line"><span class="cl">    branches:
+</span></span><span class="line"><span class="cl">      - main #我的是master分支，请自行更改
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">  deploy:
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-latest
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">        - name: Checkout
+</span></span><span class="line"><span class="cl">          uses: actions/checkout@v4
+</span></span><span class="line"><span class="cl">          with:
+</span></span><span class="line"><span class="cl">              fetch-depth: 0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        - name: Setup Hugo
+</span></span><span class="line"><span class="cl">          uses: peaceiris/actions-hugo@v3
+</span></span><span class="line"><span class="cl">          with:
+</span></span><span class="line"><span class="cl">              hugo-version: &#34;latest&#34;
+</span></span><span class="line"><span class="cl">              extended: true
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        - name: Build Web
+</span></span><span class="line"><span class="cl">          run: hugo -D
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        - name: Deploy Web
+</span></span><span class="line"><span class="cl">          uses: peaceiris/actions-gh-pages@v4
+</span></span><span class="line"><span class="cl">          with:
+</span></span><span class="line"><span class="cl">              PERSONAL_TOKEN: ${{ secrets.你的token变量名 }}
+</span></span><span class="line"><span class="cl">              EXTERNAL_REPOSITORY: 你的github名/你的仓库名
+</span></span><span class="line"><span class="cl">              PUBLISH_BRANCH: main #如果你是master分支这里也记得改
+</span></span><span class="line"><span class="cl">              PUBLISH_DIR: ./public
+</span></span><span class="line"><span class="cl">              commit_message: auto deploy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>6）在hugo主文件创建.gitignore文件，来避免提交不必要的文件</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public
+</span></span><span class="line"><span class="cl">resources
+</span></span><span class="line"><span class="cl">.hugo_build.lock
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># hugo命令
+</span></span><span class="line"><span class="cl">hugo.exe
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>（7）将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin {你的github仓库地址}
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>———————————————————————————————————————————</p>
+<h1 id="4配置-waline-评论系统">4.配置 Waline 评论系统
+</h1><h2 id="41在-leancloud-上部署数据库">4.1在 LeanCloud 上部署数据库
+</h2><ul>
+<li>
+<ol>
+<li>进入 LeanCloud 国际版，进行<a class="link" href="https://www.hetong-re4per.com/go/?target=aHR0cHM6Ly9jb25zb2xlLmxlYW5jbG91ZC5hcHAvcmVnaXN0ZXI%3d"  target="_blank" rel="noopener"
+    > 注册 </a>（推荐国际版是因为国内版的需要域名备案，详情可以去<a class="link" href="https://www.hetong-re4per.com/go/?target=aHR0cHM6Ly93YWxpbmUuanMub3JnL2d1aWRlL2dldC1zdGFydGVkLyNsZWFuY2xvdWQtJUU4JUFFJUJFJUU3JUJEJUFFLSVFNiU5NSVCMCVFNiU4RCVBRSVFNSVCQSU5Mw%3d%3d"  target="_blank" rel="noopener"
+    >官方文档</a>查看）</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>进入控制台，点击左上角「创建应用」并起一个你喜欢的名字 (请选择免费的开发版)
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/4.png"
+	width="935"
+	height="711"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/4_hu9963112190609443807.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/4_hu10323476772968835145.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="131"
+		data-flex-basis="315px"
+	
+></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>直接进入左下角「设置」-&gt;「应用凭证」，将 <code>AppID</code>、<code>AppKey</code>和 <code>MasterKey</code>复制- 保存下来
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/41.png"
+	width="990"
+	height="835"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/41_hu14526723278168485408.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/41_hu16260930580408806011.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="118"
+		data-flex-basis="284px"
+	
+></li>
+</ol>
+</li>
+</ul>
+<h2 id="42在-vercel-上部署服务端">4.2在 Vercel 上部署服务端
+</h2><ul>
+<li>
+<p>1.进入 Vercel 使用 Github 登录后进行部署</p>
+</li>
+<li>
+<p>2.Git Scope 选择自己的 Github 账号；Repository Name 填自己喜欢的名字；Create private Git Repository 是选择是否设置为个人仓库，建议选择默认件中配置客户端
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/42.png"
+	width="1409"
+	height="815"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/42_hu11428254311927742401.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/42_hu14339511236341174118.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="414px"
+	
+></p>
+</li>
+<li>
+<p>3.等待Vercel自动创建和初始化 Waline 仓库，初始化完毕后点击 Go to Dashboard 跳转到应用控制台。</p>
+</li>
+<li>
+<p>4.进入项目的「Settings -&gt; Environment Variables」，创建三个值 LEAN_ID, LEAN_KEY 和 LEAN_MASTER_KEY，分别在对应的 Value填上在 LeanCloud 获得的 AppID、AppKey和 MasterKey。
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/43.png"
+	width="1685"
+	height="835"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/43_hu15343566620409198334.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/43_hu4366652316840083683.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="201"
+		data-flex-basis="484px"
+	
+></p>
+</li>
+<li>
+<p>5.点击顶部「Deployments」选项卡，再点击最新一次的部署右边的「···」，选择「Redeploy」。</p>
+</li>
+<li>
+<p>6.此时会跳转到「Overview」界面开始部署，等待片刻后 STATUS 会变成 Ready。</p>
+</li>
+<li>
+<p>7.再点击「Visit」，即可跳转到部署好的网站地址，此地址即为你的服务端地址。</p>
+</li>
+<li>
+<p>8.最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初拷贝了 Stack 提供的 config.yaml 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">        waline:
+</span></span><span class="line"><span class="cl">            serverURL: https://&lt;PUT_YOUR_OWN_HERE&gt;.vercel.app/
+</span></span><span class="line"><span class="cl">            lang: zh-CN
+</span></span><span class="line"><span class="cl">            visitor: true
+</span></span><span class="line"><span class="cl">            avatar:
+</span></span><span class="line"><span class="cl">            emoji:
+</span></span><span class="line"><span class="cl">                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+</span></span><span class="line"><span class="cl">            requiredMeta:
+</span></span><span class="line"><span class="cl">                - name
+</span></span><span class="line"><span class="cl">                - email
+</span></span><span class="line"><span class="cl">                - url
+</span></span><span class="line"><span class="cl">            placeholder:
+</span></span><span class="line"><span class="cl">            locale:
+</span></span><span class="line"><span class="cl">                admin: Admin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>注意在这段代码上面把comment : faise &ndash;&gt;改为true</strong></p>
+<h2 id="评论管理">评论管理
+</h2><p><strong>评论管理 (管理端)</strong>
+部署完成后，请访问 <serverURL>/ui/register 进行注册。首个注册的人会被设定成管理员。
+管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。
+用户也通过评论框注册账号，登陆后会跳转到自己的档案页。
+———————————————————————————————————————————</p>
+<h1 id="5自定义域名">5.自定义域名
+</h1><h2 id="1域名">1.域名
+</h2><p>首先你要有一个域名，并且这个域名有DNS解析服务，我的域名是托管到CloundFlare上的，域名解析也是用的它。
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/51.png"
+	width="1317"
+	height="567"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/51_hu6816786177246355708.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/51_hu10108521515026621840.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="557px"
+	
+></p>
+<h2 id="2绑定">2.绑定
+</h2><ul>
+<li>1.在setting种找到pages
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/52.png"
+	width="1537"
+	height="642"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/52_hu7571734686637167010.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/52_hu2316175107054174089.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="239"
+		data-flex-basis="574px"
+	
+></li>
+<li>2.在这里输入你的域名
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/53.png"
+	width="1181"
+	height="559"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/53_hu18327768054289861350.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/53_hu16513783104679106644.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="507px"
+	
+></li>
+<li>3.在hugo的主仓库加入一个CNAME文件（里面写你的域名），这样构建的时候就会生成一个CNAME文件不用担心push的时候被顶掉
+<img src="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/54.png"
+	width="1474"
+	height="564"
+	srcset="/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/54_hu8041050658991306091.png 480w, /p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/54_hu14877578322352888146.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="261"
+		data-flex-basis="627px"
+	
+></li>
+</ul>
+<p><strong>到此部署已经基本结束，博客详细美化请自行搜索，不同主题之间亦有差异</strong>。</p>
+<p>————————————————————————————————————————————————————————————</p>
+<p>写在后面：</p>
+<p>​	好多人搭建完博客的第一件事就是写一一篇搭建博客的论文，薪火相传了属于是。好在互联网很大什么教程都能找到，搭建起来其实也不困难。搭建本博客用到的东西总结如下👇🏻👇🏻👇🏻。</p>
+<p>网页:hugo的stack主题+github
+DNS解析:CloudFlare
+评论功能:用的vercel部署的weline
+评论存储:LearnCloud
+自动化部署:github action
+域名:700050.xyz，是在spaceship买的便宜的6位数xyz域名,10年才40块，也可以搞免费的二级域名。本来是在阿里云买的域名，但是spaceship更便宜，阿里云的域名就被我66卖了，还赚了点，四舍五入等于20块买10年了属于是。</p>
+<p>参考：</p>
+<p>[1]https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/</p>
+<p>[2]https://blog.reincarnatey.net/2023/build-hugo-blog-with-stack-mod/</p>
+<p>[3]https://imayx.top/waline/#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86</p>
+<p>[4]https://www.hetong-re4per.com/posts/use-waline-comment-on-hugo/</p>
+<p>[5]https://juejin.cn/post/7093762255166111780#heading-3</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Nov 28, 2024 18:57 &#43;0800
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"locale":{"admin":"Admin","placeholder":null},"requiredMeta":["name","email","url"],"serverURL":"https://comment-blond-tau.vercel.app/"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 faust
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
