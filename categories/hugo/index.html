@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://faust6312.github.io/categories/hugo/'>
 
-<link rel="stylesheet" href="/scss/style.min.f1fe1c4edbcb2da1e452f88baf1cb8fe755ae4ecce4833e295547efe59ec3e7e.css"><meta property='og:title' content="Category: Hugo - cheems">
+<link rel="stylesheet" href="/scss/style.min.ef2d35e569eebe0f2afc8360b4f7bd9f8c2f1481ea6365f49ca5ecc5a52d47bd.css"><meta property='og:title' content="Category: Hugo - cheems">
 <meta property='og:description' content="Silence wench,I do not wish to be horny anymore, I just want to be happy.">
 <meta property='og:url' content='https://faust6312.github.io/categories/hugo/'>
 <meta property='og:site_name' content='cheems'>
@@ -501,6 +501,50 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<meting-js
+	server="netease"
+	type="playlist"
+	id="12928958918"
+	fixed="true"
+	volume="0.5"
+	>
+
+</meting-js>
+
+
+
+<script>
+    
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = function(responseText, request, href, options) {
+        if (request.responseText.match("<html")) {
+            
+            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+            
+            let bodyClass = newDom.body.className;
+            document.body.setAttribute("class", bodyClass)
+            
+            pjax._handleResponse(responseText, request, href, options);
+        } else {
+            
+        }
+    }
+</script>
+
+
+<script>
+    
+    document.addEventListener('pjax:complete', () => {
+        
+        window.Stack.init();
+    })
 </script>
 
     </body>
