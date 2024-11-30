@@ -28,7 +28,7 @@
 &lt;h2 id=&#34;2使用-cloudflare-pages-搭建图床服务&#34;&gt;2.使用 Cloudflare Pages 搭建图床服务
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;登录 Cloudflare，并根据下图指示连接到 GitHub。
-&lt;img src=&#34;https://6e9ea012.telegraph-image-1dv.pages.devundefined&#34;
+&lt;img src=&#34;https://6e9ea012.telegraph-image-1dv.pages.dev/file/768fe104ffda0df7ccb0a-405c4951cecfc41f61.png&#34;
 	
 	
 	
@@ -79,7 +79,7 @@
 &lt;li&gt;添加两个环境变量用于设置管理员账号和密码。
 账号：BASIC_USER
 密码：BASIC_PASS
-&lt;img src=&#34;https://6e9ea012.telegraph-image-1dv.pages.devundefined&#34;
+&lt;img src=&#34;https://6e9ea012.telegraph-image-1dv.pages.dev/file/c1ad24ef76472abc1f3c0-5159b6c9ad1173f267.png&#34;
 	
 	
 	
