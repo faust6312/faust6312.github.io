@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://faust6312.github.io/post/</loc>
+    <lastmod>2024-11-30T16:23:49+08:00</lastmod>
+  </url><url>
+    <loc>https://faust6312.github.io/p/vercel_artical/</loc>
+    <lastmod>2024-11-30T16:23:49+08:00</lastmod>
+  </url><url>
     <loc>https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-11-28T19:32:55+08:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2024-11-28T19:32:55+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/categories/hugo/</loc>
-    <lastmod>2024-11-28T19:32:55+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/post/</loc>
     <lastmod>2024-11-28T19:32:55+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
