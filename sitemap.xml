@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://faust6312.github.io/categories/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
+  </url><url>
+    <loc>https://faust6312.github.io/categories/cloudflare/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
+  </url><url>
     <loc>https://faust6312.github.io/p/cloudflare-telegraph-image%E6%89%93%E9%80%A0%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2024-11-30T22:08:32+08:00</lastmod>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/post/</loc>
-    <lastmod>2024-11-30T22:08:32+08:00</lastmod>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
+  </url><url>
+    <loc>https://faust6312.github.io/categories/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-11-28T19:32:55+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/categories/</loc>
     <lastmod>2024-11-28T19:32:55+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/categories/hugo/</loc>
@@ -30,13 +36,10 @@
     <lastmod>2024-11-28T19:19:49+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/p/test-chinese/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
-    <loc>https://faust6312.github.io/categories/test2/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/categories/%E6%B5%8B%E8%AF%952/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <loc>https://faust6312.github.io/categories/%E8%AF%97/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/archives/</loc>
     <lastmod>2024-11-28T18:43:32+08:00</lastmod>
@@ -44,50 +47,17 @@
     <loc>https://faust6312.github.io/page/</loc>
     <lastmod>2024-11-28T18:43:32+08:00</lastmod>
   </url><url>
-    <loc>https://faust6312.github.io/tags/css/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <loc>https://faust6312.github.io/p/%E6%9C%89%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E5%A4%A7%E6%B5%B7%E5%8E%BB%E8%93%9D/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
-    <loc>https://faust6312.github.io/tags/html/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <loc>https://faust6312.github.io/p/%E6%92%95%E5%BC%80%E4%B8%80%E5%9C%BA%E9%9B%A8%E7%9B%B4%E5%88%B0%E9%9C%B2%E5%87%BA%E5%AE%83%E7%9A%84%E8%8C%8E%E5%B9%B2/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
-    <loc>https://faust6312.github.io/tags/markdown/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <loc>https://faust6312.github.io/p/%E5%8F%A6%E4%B8%80%E7%A7%8D%E8%95%A8%E7%B1%BB/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
-    <loc>https://faust6312.github.io/p/markdown-syntax-guide/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/categories/syntax/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/tags/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/tags/themes/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/categories/themes/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/p/placeholder-text/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/tags/tag-with-whitespaces/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/categories/test-with-whitespaces/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/tags/text/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/p/math-typesetting/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/tags/emoji/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
-  </url><url>
-    <loc>https://faust6312.github.io/p/emoji-support/</loc>
-    <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+    <loc>https://faust6312.github.io/p/%E4%BB%96%E4%BB%AC/</loc>
+    <lastmod>2024-11-30T22:35:48+08:00</lastmod>
   </url><url>
     <loc>https://faust6312.github.io/about/</loc>
     <lastmod>2024-11-28T18:43:32+08:00</lastmod>
@@ -100,6 +70,8 @@
   </url><url>
     <loc>https://faust6312.github.io/search/</loc>
     <lastmod>2024-11-28T18:43:32+08:00</lastmod>
+  </url><url>
+    <loc>https://faust6312.github.io/tags/</loc>
   </url><url>
     <loc>https://faust6312.github.io/categories/test/</loc>
     <lastmod>2024-11-28T18:43:32+08:00</lastmod>
