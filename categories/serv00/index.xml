@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>CloudFlare on cheems</title>
-        <link>https://faust6312.github.io/categories/cloudflare/</link>
-        <description>Recent content in CloudFlare on cheems</description>
+        <title>Serv00 on cheems</title>
+        <link>https://faust6312.github.io/categories/serv00/</link>
+        <description>Recent content in Serv00 on cheems</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>faust</copyright>
-        <lastBuildDate>Thu, 12 Dec 2024 10:37:27 +0000</lastBuildDate><atom:link href="https://faust6312.github.io/categories/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Dec 2024 10:37:27 +0000</lastBuildDate><atom:link href="https://faust6312.github.io/categories/serv00/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CloudFlare实现Serv00账号保活&amp;进程保活并接入telegrame通知</title>
         <link>https://faust6312.github.io/p/cloudflare%E5%AE%9E%E7%8E%B0serv00%E8%B4%A6%E5%8F%B7%E4%BF%9D%E6%B4%BB%E8%BF%9B%E7%A8%8B%E4%BF%9D%E6%B4%BB%E5%B9%B6%E6%8E%A5%E5%85%A5telegrame%E9%80%9A%E7%9F%A5/</link>
         <pubDate>Thu, 12 Dec 2024 17:52:58 +0800</pubDate>
@@ -1696,115 +1696,6 @@ telegrame成功推送信息就ok了
 参考：
 &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/181957&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/181957&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>CloudFlare&#43;roim-picx打造个人图床(Telegraph-Image寄了换成这个)</title>
-        <link>https://faust6312.github.io/p/cloudflare-roim-picx%E6%89%93%E9%80%A0%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8Atelegraph-image%E5%AF%84%E4%BA%86%E6%8D%A2%E6%88%90%E8%BF%99%E4%B8%AA/</link>
-        <pubDate>Sat, 30 Nov 2024 16:20:36 +0800</pubDate>
-        
-        <guid>https://faust6312.github.io/p/cloudflare-roim-picx%E6%89%93%E9%80%A0%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8Atelegraph-image%E5%AF%84%E4%BA%86%E6%8D%A2%E6%88%90%E8%BF%99%E4%B8%AA/</guid>
-        <description>&lt;img src="https://roim-picx-9nr.pages.dev/rest/W7U1qkK.png" alt="Featured image of post CloudFlare&#43;roim-picx打造个人图床(Telegraph-Image寄了换成这个)" /&gt;&lt;h2 id=&#34;1在-github-上创建和配置仓库&#34;&gt;1.在 GitHub 上创建和配置仓库
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/roimdev/roim-picx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;roim-picx&lt;/a&gt; 并将其 fork 到你的账号下。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/wWhAqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2使用-cloudflare-pages-搭建图床服务&#34;&gt;2.使用 Cloudflare Pages 搭建图床服务
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;登录 Cloudflare，并根据下图指示连接到 GitHub。
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/kANAqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;选择pages
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/H8nAqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;选择你刚才 fork 的仓库并开始设置。&lt;/li&gt;
-&lt;li&gt;按照默认设置保存并部署(这里选VUE)。&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/aYNaqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;部署成功后，会显示一个页面，其中包含图床的网址。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3管理图床&#34;&gt;3.管理图床
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;新建KV空间
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/WX60qkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;新建R2存储
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/mVP0qkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;进入设置绑定下图三个变量
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/7JeBqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;进入KV设置登录密码
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/HytBqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;最后，重新部署服务。&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/17obqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;现在，通过图床域名就可以访问了，输入TOKEN就可以进入上传和管理界面。
-&lt;img src=&#34;https://roim-picx-9nr.pages.dev/rest/lKfCqkK.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
